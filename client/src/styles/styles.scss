@@ -1,0 +1,117 @@
+@import "./settings.scss";
+@import "./base.scss";
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h3,
+strong,
+.btn {
+  font-family: "Staatliches", cursive;
+}
+
+.title {
+  color: #444444;
+  background: #ffffff;
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+    4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+    4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+    7px 6px 1px #cccccc;
+  color: #444444;
+  background: transparent;
+}
+
+.navbar-shadow {
+  -webkit-box-shadow: -2px 16px 34px -17px rgba(0, 0, 0, 0.86);
+  -moz-box-shadow: -2px 16px 34px -17px rgba(0, 0, 0, 0.86);
+  box-shadow: -2px 16px 34px -17px rgba(0, 0, 0, 0.86);
+}
+
+.form-control.cust-input {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.form-control.cust-input:focus {
+  box-shadow: none;
+  border-bottom: 1px solid $blue;
+}
+
+.form-control.is-invalid {
+  box-shadow: none;
+  border-bottom: 1px solid #dc3545;
+}
+
+.login-form {
+  border: 2px solid white;
+  border-radius: 10%;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 10px 10px 16px 8px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 10px 10px 16px 8px rgba(0, 0, 0, 0.21);
+  box-shadow: 10px 10px 16px 8px rgba(0, 0, 0, 0.21);
+}
+
+.event-key {
+  font-weight: 700;
+}
+
+.placesInput {
+  border: 1px solid lightgray;
+  height: 2.3rem;
+  border-radius: 3px;
+}
+
+.placesInput:focus {
+  border: none;
+}
+
+.location-invalid {
+  display: block;
+}
+
+.border-invalid {
+  border: 1px solid #dc3545;
+}
+
+input.searchField {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 4px 5px 3px 10px;
+}
+
+.details-link:hover {
+  text-decoration: none;
+}
+
+.event-page {
+  flex-direction: column;
+}
+
+#mapContainer {
+  height: 200px;
+  box-shadow: 15px 27px 27px -24px rgba(0, 0, 0, 0.86);
+}
+
+@media (min-width: 992px) {
+  #mapContainer {
+    width: 40vw;
+    height: 300px;
+    margin-left: 5vw;
+  }
+  .event-page {
+    flex-direction: row;
+  }
+}
+
+.btn {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
